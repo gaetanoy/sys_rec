@@ -1,6 +1,6 @@
 # **Mini-projet : Mise en place d’un système de recommandation**
 
-Le but de ce mini-projet est de mettre en place un système de recommandation qui se base sur lesalgorithmes de filtrage collaboratif et de filtrage basé sur le contenu. En bonus, vous pouvez y ajouter une brique RAG et des pratiques MLOps (voir « Pour aller plus loin », page 2).
+Le but de ce mini-projet est de mettre en place un système de recommandation qui se base sur les algorithmes de filtrage collaboratif et de filtrage basé sur le contenu. En bonus, vous pouvez y ajouter une brique RAG et des pratiques MLOps (voir « Pour aller plus loin », page 2).
 
 Pour cela, vous devez choisir un jeu de donnée
 
@@ -34,7 +34,6 @@ Les deux extensions ci-dessous sont facultatives et indépendantes : chacune con
 
 **RAG (optionnel).** Ajouter une brique RAG (Retrieval-Augmented Generation) n’est pas obligatoire, mais c’est un plus. Par exemple, indexez les descriptions et les avis des articles dans une base vectorielle, puis demandez à un LLM d’expliquer chaque recommandation en citant ces textes, ou de répondre à une demande comme « un film léger à voir en famille ». Si votre jeu de données porte sur des films, l’API de TMDB fournit les synopsis : avec MovieLens, la colonne tmdbId du fichier links.csv donne l’identifiant de chaque film.
 
-
 Ressources pour le RAG :
 
 - Exemple du cours : le notebook Lab_RAG.ipynb (FAISS, LLM local avec Ollama)
@@ -43,12 +42,10 @@ Ressources pour le RAG :
 - RAG pas à pas avec un LLM local (LlamaIndex + Ollama) :[https://developers.llamaindex.ai/python/framework/getting_started/starter_example_local/](https://developers.llamaindex.ai/python/framework/getting_started/starter_example_local/)
 - Exemple plus complet (Hugging Face Cookbook) : [https://huggingface.co/learn/cookbook/advanced_rag](https://huggingface.co/learn/cookbook/advanced_rag)
 
-
 **MLOps (optionnel).** Les pratiques MLOps sont elles aussi optionnelles et constituent un autre plus.
 Vous pouvez suivre vos expériences (paramètres, métriques, modèles) avec MLflow, exposer vos recommandations via un serveur et ses endpoints (par exemple FastAPI :
 
 `G⁠E⁠T⁠ ⁠/⁠r⁠e⁠c⁠o⁠m⁠m⁠e⁠n⁠d⁠?⁠u⁠s⁠e⁠r⁠_⁠i⁠d⁠=⁠4⁠2` ), puis écrire un Dockerfile pour servir le tout en local. Indiquez dans le README comment lancer le serveur et le tester.
-
 
 Ressources pour le MLOps :
 
